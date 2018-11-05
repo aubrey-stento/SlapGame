@@ -1,7 +1,6 @@
 let angrySkeleton = {
-  name: "Phil",
+  name: "Phil the Angry Skeleton",
   items: []
-  // activeItem: if you use this then you wont use items from line 3
 }
 
 let items = {
@@ -24,6 +23,9 @@ function slap() {
     health -= 1
   }
   hits++
+  if (health < 0) {
+    return 0;
+  }
   update();
 }
 
@@ -36,6 +38,10 @@ function punch() {
     health -= 5
   }
   hits++
+
+  if (health < 0) {
+    return 0;
+  }
   update();
 }
 
@@ -48,8 +54,11 @@ function kick() {
     health -= 10
   }
   hits++
-  update();
 
+  if (health < 0) {
+    return 0;
+  }
+  update();
 }
 
 function deployshield() {

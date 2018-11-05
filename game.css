@@ -1,9 +1,10 @@
-.bg-purple {
-  background-color: rgba(133, 105, 150, 0.829);
+.bg-main {
+  background-color: rgba(255, 166, 0, 0.776);
 }
 .skeletonlabel {
   display: flex;
   justify-content: center;
+  align-items: space-between;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   font-size: 30px;
